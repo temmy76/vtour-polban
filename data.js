@@ -33,7 +33,8 @@ var APP_DATA = {
           "yaw": -0.4954362203664573,
           "pitch": 0.03743041998543184,
           "rotation": 0,
-          "target": "1-2---gedung-pendopo-tonny-soewandito---tampak-depan"
+          "target": "1-2---gedung-pendopo-tonny-soewandito---tampak-depan",
+          "weight": 20,
         }
       ],
       "infoHotspots": [
@@ -78,19 +79,22 @@ var APP_DATA = {
           "yaw": 0.8328278498394646,
           "pitch": 0.04870543110827619,
           "rotation": 0,
-          "target": "0-1---gerbang-utama"
+          "target": "0-1---gerbang-utama",
+          "weight": 20
         },
         {
           "yaw": -1.576721580956642,
           "pitch": -0.004051976313157013,
           "rotation": 0,
-          "target": "2-3---gedung-p2t-pengembangan-pendidikan-dan-teknologi"
+          "target": "2-3---gedung-p2t-pengembangan-pendidikan-dan-teknologi",
+          "weight": 18
         },
         {
           "yaw": 2.003262544522295,
           "pitch": 0.07729865700221339,
           "rotation": 0,
-          "target": "3-4---gedung-direktorat"
+          "target": "3-4---gedung-direktorat",
+          "weight": 18
         }
       ],
       "infoHotspots": [
@@ -159,13 +163,15 @@ var APP_DATA = {
           "yaw": -1.9360963525093666,
           "pitch": 0.013894841591554297,
           "rotation": 0,
-          "target": "6-7---persimpangan-1"
+          "target": "6-7---persimpangan-1",
+          "weight": 20
         },
         {
           "yaw": 2.000166017496415,
           "pitch": 0.04895581113639835,
           "rotation": 0,
-          "target": "1-2---gedung-pendopo-tonny-soewandito---tampak-depan"
+          "target": "1-2---gedung-pendopo-tonny-soewandito---tampak-depan",
+          "weight": 18
         }
       ],
       "infoHotspots": [
@@ -210,13 +216,15 @@ var APP_DATA = {
           "yaw": -1.0808458598080115,
           "pitch": 0.13790893799300896,
           "rotation": 0,
-          "target": "4-5---gedung-pendopo-tonny-soewandito--tampak-samping-arah-selatan"
+          "target": "4-5---gedung-pendopo-tonny-soewandito--tampak-samping-arah-selatan",
+          "weight": 7
         },
         {
           "yaw": 0.9153140283219336,
           "pitch": 0.014823315835634787,
           "rotation": 0,
-          "target": "1-2---gedung-pendopo-tonny-soewandito---tampak-depan"
+          "target": "1-2---gedung-pendopo-tonny-soewandito---tampak-depan",
+          "weight": 18
         }
       ],
       "infoHotspots": [
@@ -261,13 +269,15 @@ var APP_DATA = {
           "yaw": -0.9234443896264466,
           "pitch": 0.05722819137746171,
           "rotation": 0,
-          "target": "3-4---gedung-direktorat"
+          "target": "3-4---gedung-direktorat",
+          "weight": 7
         },
         {
           "yaw": 1.6065100527834568,
           "pitch": 0.04718679669602821,
           "rotation": 0,
-          "target": "5-6---area-parkir-staff"
+          "target": "5-6---area-parkir-staff",
+          "weight": 15
         }
       ],
       "infoHotspots": [
@@ -533,19 +543,22 @@ var APP_DATA = {
           "yaw": -0.22831959895659892,
           "pitch": 0.0930397228854023,
           "rotation": 0,
-          "target": "18-20---gedung-a"
+          "target": "18-20---gedung-a",
+          "weight": 8
         },
         {
           "yaw": 1.6792755820034024,
           "pitch": 0.10466188963236611,
           "rotation": 0,
-          "target": "10-12---gedung-kuliah-baru-gkb"
+          "target": "10-12---gedung-kuliah-baru-gkb",
+          "weight": 4
         },
         {
           "yaw": -1.634587051977963,
           "pitch": 0.10827637858766259,
           "rotation": 0,
-          "target": "7-8---gedung-h-pascasarjana---halaman-depan"
+          "target": "7-8---gedung-h-pascasarjana---halaman-depan",
+          "weight": 28
         }
       ],
       "infoHotspots": [
@@ -590,13 +603,15 @@ var APP_DATA = {
           "yaw": -1.7493295674949803,
           "pitch": 0.06417975772429152,
           "rotation": 0,
-          "target": "11-13---persimpangan-2"
+          "target": "11-13---persimpangan-2",
+          "weight": 20
         },
         {
           "yaw": 2.9078886048456205,
           "pitch": 0.13246965147773793,
           "rotation": 0,
-          "target": "9-11---gedung-jurusan-akuntansi"
+          "target": "9-11---gedung-jurusan-akuntansi",
+          "weight": 4
         }
       ],
       "infoHotspots": []
@@ -634,13 +649,15 @@ var APP_DATA = {
           "yaw": -1.3577603794825706,
           "pitch": 0.09481986759324101,
           "rotation": 0,
-          "target": "12-14---gedung-up-mku-unit-pelayanan-mata-kuliah-umum-dan-jurusan-bahasa-inggris"
+          "target": "12-14---gedung-up-mku-unit-pelayanan-mata-kuliah-umum-dan-jurusan-bahasa-inggris",
+          "weight": 16
         },
         {
           "yaw": 1.7055966963781675,
           "pitch": 0.05989263888607255,
           "rotation": 0,
-          "target": "10-12---gedung-kuliah-baru-gkb"
+          "target": "10-12---gedung-kuliah-baru-gkb",
+          "weight": 20
         }
       ],
       "infoHotspots": []
@@ -678,13 +695,15 @@ var APP_DATA = {
           "yaw": -1.48393087863559,
           "pitch": 0.05868418976233869,
           "rotation": 0,
-          "target": "13-15---gedung-jurusan-teknik-komputer"
+          "target": "13-15---gedung-jurusan-teknik-komputer",
+          "weight": 15
         },
         {
           "yaw": 1.6104742005815087,
           "pitch": 0.07952646643192907,
           "rotation": 0,
-          "target": "11-13---persimpangan-2"
+          "target": "11-13---persimpangan-2",
+          "weight": 16
         }
       ],
       "infoHotspots": [
@@ -729,13 +748,15 @@ var APP_DATA = {
           "yaw": -0.820262026068109,
           "pitch": 0.03137968613042119,
           "rotation": 0,
-          "target": "12-14---gedung-up-mku-unit-pelayanan-mata-kuliah-umum-dan-jurusan-bahasa-inggris"
+          "target": "12-14---gedung-up-mku-unit-pelayanan-mata-kuliah-umum-dan-jurusan-bahasa-inggris",
+          "weight": 15
         },
         {
           "yaw": 0.8565192195907407,
           "pitch": 0.15180638099890587,
           "rotation": 0,
-          "target": "14-16---persimpangan-3"
+          "target": "14-16---persimpangan-3",
+          "weight": 8
         }
       ],
       "infoHotspots": [
@@ -792,13 +813,15 @@ var APP_DATA = {
           "yaw": -1.5384086259626528,
           "pitch": 0.020343026562848365,
           "rotation": 0,
-          "target": "13-15---gedung-jurusan-teknik-komputer"
+          "target": "13-15---gedung-jurusan-teknik-komputer",
+          "weight": 8
         },
         {
           "yaw": 1.3474762397205922,
           "pitch": 0.12640739209228613,
           "rotation": 0,
-          "target": "15-17---gedung-jurusan-elektro-mesin-energi-dan-refrigasi"
+          "target": "15-17---gedung-jurusan-elektro-mesin-energi-dan-refrigasi",
+          "weight": 12
         }
       ],
       "infoHotspots": [
@@ -843,13 +866,15 @@ var APP_DATA = {
           "yaw": -1.6433782798662406,
           "pitch": 0.09219690274225911,
           "rotation": 0,
-          "target": "14-16---persimpangan-3"
+          "target": "14-16---persimpangan-3",
+          "weight": 12
         },
         {
           "yaw": 1.5013083322890308,
           "pitch": 0.09988143803479232,
           "rotation": 0,
-          "target": "16-18---persimpangan-4"
+          "target": "16-18---persimpangan-4",
+          "weight": 10
         }
       ],
       "infoHotspots": [
@@ -900,19 +925,22 @@ var APP_DATA = {
           "yaw": -1.7328363014386365,
           "pitch": 0.10592840111940838,
           "rotation": 0,
-          "target": "15-17---gedung-jurusan-elektro-mesin-energi-dan-refrigasi"
+          "target": "15-17---gedung-jurusan-elektro-mesin-energi-dan-refrigasi",
+          "weight": 10
         },
         {
           "yaw": 1.6401759599354309,
           "pitch": 0.08699654146609426,
           "rotation": 0,
-          "target": "17-19---jalan-1"
+          "target": "17-19---jalan-1",
+          "weight": 4
         },
         {
           "yaw": -3.1000005593263253,
           "pitch": 0.1301412302898921,
           "rotation": 0,
-          "target": "19-21---jalan-2"
+          "target": "19-21---jalan-2",
+          "weight": 10
         }
       ],
       "infoHotspots": []
@@ -950,13 +978,15 @@ var APP_DATA = {
           "yaw": -2.486051217684606,
           "pitch": 0.13655999919773443,
           "rotation": 0,
-          "target": "16-18---persimpangan-4"
+          "target": "16-18---persimpangan-4",
+          "weight": 4
         },
         {
           "yaw": 0.9296937940000713,
           "pitch": 0.036082064292909166,
           "rotation": 0,
-          "target": "18-20---gedung-a"
+          "target": "18-20---gedung-a",
+          "weight": 12
         }
       ],
       "infoHotspots": []
@@ -994,13 +1024,15 @@ var APP_DATA = {
           "yaw": -1.5861021472942909,
           "pitch": 0.06514906312637159,
           "rotation": 0,
-          "target": "17-19---jalan-1"
+          "target": "17-19---jalan-1",
+          "weight": 12
         },
         {
           "yaw": 1.5972289155943873,
           "pitch": 0.027361440956287453,
           "rotation": 0,
-          "target": "9-11---gedung-jurusan-akuntansi"
+          "target": "9-11---gedung-jurusan-akuntansi",
+          "weight": 8
         }
       ],
       "infoHotspots": []
@@ -1706,3 +1738,4 @@ var APP_DATA = {
     "viewControlButtons": true
   }
 };
+

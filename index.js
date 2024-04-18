@@ -20,7 +20,7 @@
 var urlParams = new URLSearchParams(window.location.search);
 var idParam = urlParams.get('id');
 
-while(!idParam) {
+while (!idParam) {
   idParam = prompt("What's your email?");
   window.location = window.location.href + "?id=" + idParam;
 }
@@ -95,7 +95,7 @@ var storeLog = {
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100 * Math.PI / 180, 120 * Math.PI / 180);
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({
@@ -129,7 +129,7 @@ var storeLog = {
     // yawSpeed: 0.03,
     yawSpeed: 0.075, // !Customize
     targetPitch: 0,
-    targetFov: Math.PI/2
+    targetFov: Math.PI / 2
   });
   if (data.settings.autorotateEnabled) {
     autorotateToggleElement.classList.add('enabled');
@@ -189,12 +189,12 @@ var storeLog = {
 
   // Associate view controls with elements.
   var controls = viewer.controls();
-  controls.registerMethod('upElement',    new Marzipano.ElementPressControlMethod(viewUpElement,     'y', -velocity, friction), true);
-  controls.registerMethod('downElement',  new Marzipano.ElementPressControlMethod(viewDownElement,   'y',  velocity, friction), true);
-  controls.registerMethod('leftElement',  new Marzipano.ElementPressControlMethod(viewLeftElement,   'x', -velocity, friction), true);
-  controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement,  'x',  velocity, friction), true);
-  controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
-  controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
+  controls.registerMethod('upElement', new Marzipano.ElementPressControlMethod(viewUpElement, 'y', -velocity, friction), true);
+  controls.registerMethod('downElement', new Marzipano.ElementPressControlMethod(viewDownElement, 'y', velocity, friction), true);
+  controls.registerMethod('leftElement', new Marzipano.ElementPressControlMethod(viewLeftElement, 'x', -velocity, friction), true);
+  controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement, 'x', velocity, friction), true);
+  controls.registerMethod('inElement', new Marzipano.ElementPressControlMethod(viewInElement, 'zoom', -velocity, friction), true);
+  controls.registerMethod('outElement', new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom', velocity, friction), true);
 
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
@@ -279,7 +279,7 @@ var storeLog = {
     icon.classList.add('link-hotspot-icon');
 
     // Set rotation transform.
-    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
+    var transformProperties = ['-ms-transform', '-webkit-transform', 'transform'];
     for (var i = 0; i < transformProperties.length; i++) {
       var property = transformProperties[i];
       icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
@@ -381,7 +381,7 @@ var storeLog = {
     var toggle = function() {
       wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
-      
+
       // Push Log: Click Info
       let logClickInfo = {
         "user": idParam,
@@ -411,8 +411,8 @@ var storeLog = {
 
   // Prevent touch and scroll events from reaching the parent element.
   function stopTouchAndScrollEventPropagation(element, eventList) {
-    var eventList = [ 'touchstart', 'touchmove', 'touchend', 'touchcancel',
-                      'wheel', 'mousewheel' ];
+    var eventList = ['touchstart', 'touchmove', 'touchend', 'touchcancel',
+      'wheel', 'mousewheel'];
     for (var i = 0; i < eventList.length; i++) {
       element.addEventListener(eventList[i], function(event) {
         event.stopPropagation();
@@ -444,20 +444,20 @@ var storeLog = {
   // Scene List for Save Log
   var custSceneList = document.querySelector('#sceneList .scenes');
 
-  var linkSaveLog   = document.createElement("a");
+  var linkSaveLog = document.createElement("a");
   linkSaveLog.setAttribute("href", "javascript:void(0)");
   linkSaveLog.setAttribute("class", "scene save-log");
   linkSaveLog.setAttribute("id", "save-log");
 
-  var listSaveLog   = document.createElement("li");
+  var listSaveLog = document.createElement("li");
   listSaveLog.setAttribute("class", "text");
-  
-  var textSaveLog   = document.createTextNode("Save Log");
+
+  var textSaveLog = document.createTextNode("Save Log");
   listSaveLog.appendChild(textSaveLog);
   linkSaveLog.appendChild(listSaveLog);
   custSceneList.appendChild(linkSaveLog);
 
-  var custSaveLog   = document.getElementById('save-log');
+  var custSaveLog = document.getElementById('save-log');
   custSaveLog.addEventListener('click', saveLog);
 
 
@@ -473,7 +473,7 @@ var storeLog = {
 
   function saveLog() {
     console.log(storeLog);
-    
+
     download(JSON.stringify(storeLog), "VTour_Mouse_" + idParam + ".json", "text/plain");
   }
 
