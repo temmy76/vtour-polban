@@ -438,6 +438,7 @@ var storeLog = {
     return null;
   }
 
+
   // Display the initial scene.
   switchScene(scenes[0]);
 
@@ -477,4 +478,27 @@ var storeLog = {
     download(JSON.stringify(storeLog), "VTour_Mouse_" + idParam + ".json", "text/plain");
   }
 
+  function getWeightFromData(data) {
+    return data.scenes.map(function(d) {
+      return d.linkHotspots.map(function(l) {
+        return l.weight;
+      });
+    })
+  }
+
+  const weightData = getWeightFromData(data);
+
+  // pake algo shortest path
+  console.log(weightData);
+  let sortestPath = 123;
+
+  console.log(sortestPath);
+
+  // --- 
+
+  // pake salah satu algo hamiltonian 
+  console.log(weightData);
+  let optimalPath = 123;
+
+  console.log(optimalPath);
 })();
